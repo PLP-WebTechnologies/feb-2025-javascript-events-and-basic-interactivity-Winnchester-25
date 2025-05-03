@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to My Web Page.</h1>
+      </header>
+
+      <main>
+        <section class="event-handing">
+          <h2>Event Handling</h2>
+
+          <p>
+            Pardon my scanty page, am trying to get this assignment as done as
+            quickly as possible. Even though i risk showing my lack of finess.
+          </p>
+          <br />
+          <p>
+            Make use of the buttons below, you might be surprised what they can
+            do.
+          </p>
+
+          <span class="btn">Click me</span>
+          <span class="btn hover">Hover over</span>
+          <span class="btn clicky">Clicky</span>
+        </section>
+
+        <section class="Interactive Elements">
+          <h1>Interactive Elements</h1>
+          <p>
+            Welcome to the interactive side of the Assignment, a list of button
+            s below can do some freaky stuff if you know what i mean
+          </p>
+          <span class="btn morph">Its Morphing Time</span>
+
+          <p>Image gallery huh?</p>
+          <div class="gallery">
+            <img
+              class="slide"
+              src="/img/desk-3139127_1920.jpg"
+              alt=""
+              width="500px"
+            />
+           <!--  <img
+              class="slide"
+              src="/img/computer-1149148_1920.jpg"
+              alt=""
+              width="300px"
+            />
+            <img class="slide" src="/img/keyboard-7369516_1920.jpg" alt="" width="300px" /> -->
+          </div>
+
+          <span class="nextImage" onclick="nextImage()" >Next</span>
+
+          </p>That sure gave me a headache, alot of things to revisit to make this knowledge solid you know...
+
+            Off to the Accordion....</p>
+          </p>
+
+          <div>
+            <button onclick="showTab('tab1')">Tab 1</button>
+            <button onclick="showTab('tab2')">Tab 2</button>
+          </div>
+
+          <div id="tab1">Content for Tab 1</div>
+          <div id="tab2"> Content for Tab 2</div>
+
+         
+          <button onclick="triggerBounce()" class="animate-btn">Animate Me</button>
+
+        </section>
+
+        <section class="form">
+          <h1>Form</h1>
+          <p class="align">Fill out the form below to get started</p>
+          <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required/>
+
+            <label for="confirm-Password">Confirm Password</label>
+            <input type="password" name="password" id="confirmPassword" required/>
+
+
+            <button type="submit">Submit</button>
+          </form>
+
+      </main>
+
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
